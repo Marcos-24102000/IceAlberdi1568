@@ -1,0 +1,368 @@
+ /* .letra{
+         
+            display: block;
+            color: white;
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 12ch;
+            animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+            overflow: hidden;
+          }
+          @keyframes typing {
+            from{
+                width: 0;
+            }
+          }
+          @keyframes blink{
+            50%{
+                border-color: transparent;
+            }
+          } */
+          img {
+            max-width: 100%;
+            display: flex;
+            margin: auto;
+            border-radius: 20px;
+            filter: contrast(120%);
+        }
+       
+    
+        .ancho {
+            width: 100%;
+        }
+    
+        .banner {
+            background-image: url('/biblia.jpg');
+            background-size: cover;
+        }
+    
+        video {
+            max-width: 90%;
+
+        }
+        section{
+            background-image: url('/biblia.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        figure{
+          backdrop-filter: blur(10px);
+        }
+        @media(max-width:500px){
+          section img{
+           max-width: 100%;
+          }
+          nav{
+            margin-left: 20%;
+          }
+        }
+        @media(min-width:501px){
+          section img{
+           max-width: 100%;
+          }
+        }
+        @media(min-width:900px){
+          section img{
+           max-width: 70%;
+          }
+        }
+        .letra{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+             
+        }
+        /* From Uiverse.io by TISEPSE */ 
+    .btn2 {
+      position: relative;
+      display: inline-block;
+      padding: 3px 3px;
+      border: 2px solid #fefefe;
+      text-transform: uppercase;
+      color: #fefefe;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    
+    .btn2::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - -2px);
+      background-color: #212121;
+      transition: 0.3s ease-out;
+      transform: scaleY(1);
+    }
+    
+    .btn2::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - 50px);
+      background-color: #212121;
+      transition: 0.3s ease-out;
+      transform: scaleY(1);
+    }
+    
+    .btn2:hover::before {
+      transform: translateY(-25px);
+      height: 0;
+    }
+    
+    .btn2:hover::after {
+      transform: scaleX(0);
+      transition-delay: 0.15s;
+    }
+    
+    .btn2:hover {
+      border: 2px solid #fefefe;
+    }
+    
+    .btn2 span {
+      position: relative;
+      z-index: 3;
+    }
+    
+    button {
+      text-decoration: none;
+      border: none;
+      background-color: transparent;
+    }
+      nav{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+        ul li{
+            display: inline-block;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+        .logo{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 15px;
+        }
+      /* From Uiverse.io by Gaurang7717 */ 
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #00d757;
+  }
+  
+  .sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 25px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:hover {
+    width: 150px;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 10px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+  }
+  .Btn:active {
+    transform: translate(2px, 2px);
+  }
+  
+  .redondear{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: 1s ease;
+  } 
+  .agrandar:hover{
+    border-radius: 5%;
+    width: 100%;
+    transition: 1s ease;
+  }
+  .maximo{
+    max-width: 40%;
+  }    
+  @keyframes show {
+    from{
+      opacity: 0;
+      scale: 25%;
+    }
+    to{
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+
+  .imagenes {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+  }
+  /* From Uiverse.io by 0xnihilism */ 
+.brutalist-button {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 45px;
+  background-color: #e3d19c;
+  color: #89530e;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  outline: 3px solid #1a1a1a;
+  box-shadow: 8px 8px 0 #ff6c37;
+  transition: all 0.2s ease-out;
+  padding: 0 12px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.brutalist-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg at 50% 50%, #ff6c37, #9a77ff, #ff6c37);
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: 1;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.brutalist-button:hover::before {
+  opacity: 0.15;
+}
+
+.brutalist-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 #ff6c37;
+}
+
+.brutalist-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0 #ff6c37;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+.claude-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.starburst {
+  font-size: 28px;
+  color: #eb6c22;
+  margin-right: 6px;
+  text-shadow: 2px 2px 0 #1a1a1a;
+  transition: transform 0.2s ease-out;
+}
+
+.brutalist-button:hover .starburst {
+  transform: rotate(-15deg) scale(1.1);
+}
+
+.brutalist-button:active .starburst {
+  transform: rotate(15deg) scale(0.9);
+}
+
+.claude-text {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 0 #e3d19c;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+}
+
+.brutalist-button:hover .button-text {
+  transform: skew(-5deg);
+}
+
+.brutalist-button:active .button-text {
+  transform: skew(5deg);
+}
+
+.button-text span:first-child {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button-text span:last-child {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+  
