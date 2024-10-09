@@ -41,7 +41,7 @@
 
         }
         section{
-            background-image: url('/biblia.jpg');
+            background-image: url('biblia.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
